@@ -71,7 +71,7 @@ func main() {
 
 	tcp := listeners.NewTCP(listeners.Config{
 		ID:        "t1",
-		Address:   "3.113.9.122:8888",
+		Address:   "172.31.46.181:8888",
 		TLSConfig: tlsConfig,
 	})
 	err = server.AddListener(tcp)
