@@ -53,7 +53,7 @@ func main() {
 				return cert, nil
 			}
 			// Fallback to a default certificate if needed
-			log.Println("Unsupport SNI")
+			log.Println("Unsupport SNI", clientHello)
 			return cert, nil
 		},
 	}
