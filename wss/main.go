@@ -42,7 +42,7 @@ func main() {
 	}
 
 
-	listener, err := tls.Listen("tcp", ":1882", tlsConfig)
+	listener, err := tls.Listen("tcp", "172.31.46.181:1882", tlsConfig)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
