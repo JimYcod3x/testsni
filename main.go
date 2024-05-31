@@ -92,6 +92,7 @@ func main() {
 		ID:        "ws1",
 		Address:   ":1882",
 		TLSConfig: tlsConfig,
+		
 	})
 	err = server.AddListener(ws)
 	if err != nil {
