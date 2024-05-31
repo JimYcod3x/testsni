@@ -78,5 +78,5 @@ func handleConnection(conn net.Conn) {
 	state := tlsConn.ConnectionState()
 
 
-	log.Printf("ClientHelloInfo: %+v", state.ServerName)
+	log.Printf("ClientHelloInfo: %+v", state)
 }
