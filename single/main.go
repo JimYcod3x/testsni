@@ -50,7 +50,7 @@ func main() {
 	tlsConfig := &tls.Config{
 		Certificates: []tls.Certificate{cert},
 		// 	if cert, ok := certificates[clientHello.ServerName]; ok {
-		// 		return cert, nil
+		// 		return cert, nilcod
 		// 	}
 		// 	// Fallback to a default certificate if needed
 		// 	return cert, nil
