@@ -49,6 +49,7 @@ func main() {
 	// TLS Config with SNI support
 	tlsConfig := &tls.Config{
 		GetCertificate: func(clientHello *tls.ClientHelloInfo) (*tls.Certificate, error) {
+			log.Println("clientHello.ServerName:" , clientHello.ServerName)
 			if cert, ok := certificates[clientHello.ServerName]; ok {
 				return cert, nil
 			}
